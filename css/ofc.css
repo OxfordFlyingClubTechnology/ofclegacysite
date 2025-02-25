@@ -1,0 +1,340 @@
+/****** POSITIONING ******/ 
+body {
+    margin: 0;
+    padding: 0;
+		background-color: #cccccc; /*#aaaacc; /* #80B9FF; /*#009EFF; /* #aaaacc; /**/
+    text-align: center;
+		padding: 2em 4em 2em 4em;
+		XXborder-right: 4em solid yellow;
+    }
+
+/* Set list defaults for browser consistency */	
+ul, ul li {
+    position: relative; /**/
+    display: block; /* Allow epxansion to full width */
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		}
+/* Default for all lists inside the color splash */
+li ul li {
+    Xbackground-color: transparent;
+		}
+/*** Curency Banner  ****************************************/
+.c_banner { /* currency banner */
+    position: relative;
+    background-color: #dd4444; /* f81111 */
+		border: 1px outset;
+		text-align: center;
+		margin: 0 0 1em 0;
+		padding: .2em;
+		}
+.c_banner a {margin: auto .4em;}
+.c_banner,
+.c_banner a:link, .c_banner a:visited {color: white;} 
+.c_banner a:hover {color: black;}
+.c_banner a:active {color: white;}
+.c_banner h1, .c_banner h2, .c_banner h3,
+.c_banner h4, .c_banner h5, .c_banner p {margin: .2em 0}
+.who {
+	color: black; /*#F8F8F8; */
+	text-align: left;
+  margin-top: -1.3em; /* Squeeze into top body padding */
+	margin-left: .7em;
+  margin-bottom: 0.2em;
+	}
+.who p {margin:0;}
+  
+  
+/***************************************************************/
+.title, .item li,  
+.item .sub_item li
+{ /* the color splotches */
+		position: relative; /**/
+		display: inline-block; /* ensure full width for short text*/
+		width: 100%;
+		text-align: left;
+		background-color: #5b75b5; /*#bb88bb; /*#0080E0; /*#C0F996;   /*#bb88bb; /**/
+		border: solid 1px black; /* need a border for Mozilla to show top */
+		border: 1px outset;
+		margin: 0 0 1.5em 0; /* Use only Bottom margins since IE doesn't collapse properly */
+    padding: 0;          /* Need Bottom to allow room for shift-down of content */
+		}
+
+/* MARGINS ARE SCREWED UP - TAIL OF TEXT BOTTOM GETS CUT OFF */
+
+.item li.sub_item {
+    background-color: transparent; /* Let the background show */
+		border: none;
+    margin-bottom: 0; /* Don't want to double bottom margin to next li */
+		}
+.sub_item ul {  /* This is for indented list items like members */
+		margin-left: 2em;
+		}
+    
+.item li li {	/* Undo above for normal list use */
+		display: list-item;
+		width: auto;
+		background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+	  }
+.title .banner, .headline { /* the actual content */
+		position: relative;
+		display: block;
+		width: 100%; /* has-layout for IE */
+		background-color: #f8f8f8;
+		border: 1px solid black;
+		top: .7em;
+		left: -.7em;
+		margin: 0;
+		padding: 0; 
+		Xpadding: 0 1em; /* padding goes outside width of 100%*/
+		}
+.home_logo {
+    height: 225px;
+    }
+.banner_logo, .banner_days {
+    Xbackground-color: yellow;
+    width: 25%;
+    float:left;
+    }
+.banner_logo img {
+    width: 100px;
+    }
+.banner_days {
+    float:right;
+    }
+.title .banner {
+		text-align: center;
+		}
+/* option to expose bottom color */
+.XXXtitle .banner {margin-bottom: 1.4em}
+
+.text { /* the actual content */
+		position: relative;
+		display: block; /**/
+		zoom: 1; /* alternate to inline-block for "hasLayout" for IE7 ???*/
+		top: .7em;
+		left: .7em;
+		background-color: f8f8f8;
+		border: 1px solid black;
+		margin: .7em  0 0 0;
+		padding: .7em 1em;
+		}
+
+/***************************************************************/
+ul.menu {
+		border: 1px outset;
+		background-color: #5b75b5; /*#bb88bb; */
+		margin: 0 0 .8em 0; /* 1.5 - .7 */
+		padding: .2em;
+		}
+.menu li {
+		position: relative;
+		display: inline;
+		border: none;
+		margin: 0;
+		padding: 0;
+		}
+
+		
+/* LoVeHAte */
+a:link, a:visited, a:hover, a:active {
+    color: black;
+		}
+a:hover {
+    color: #f81111;
+		}
+		
+.menu a {
+		position: relative;
+		display: inline-block;
+		font-size: 115%; /* smaller than h4 */
+		text-align: center;
+		width: 8em;
+		border: 1px white solid;
+		color: white;
+		text-decoration: none;
+		margin: .2em;
+		padding: 0;
+		}
+.menu a:link, .menu a:visited {
+    border: 1px solid #5b75b5; /*#bb88bb; /* needed to prevent shifting */
+		color: white;
+		}
+.menu a:hover, .menu a:active {
+    border: 1px inset;
+		color: white;
+		}
+
+
+
+
+/* Note: "hasLayout" on container screws top margin of items inside, 
+but is required for proper floats in IE. Must set vertical margins for
+text and headers in Typography Section(below). */
+
+/***************************************************************/
+
+table {
+		border-collapse: collapse;
+		}
+th, td {
+		font-weight: normal;
+		vertical-align: top;
+		padding-bottom: .3em; /* easiest way for row spacing in IE */
+		}
+th {
+    text-align: right;
+		padding-right: .5em;
+		}
+
+
+/* Generic two column division */
+.split_left, .split_right {
+		position: relative;
+		display: inline-block;
+		float: left;
+		width: 49.4%; /* leave a smidge for error */
+		Xbackground-color: yellow;
+		margin: 0;
+		padding: 0;
+		}
+.split_left {margin: 0 1% 0 0;} /* Margins not collapsed for floats */
+/* Adjust for titles */
+.title .split_left {
+		text-align: center;
+		}
+.title .split_right {
+    width: auto;
+		text-align: center;
+		}
+
+
+
+/* Generic picture floats */
+.pic_left, .pic_right, .pic, .pic_left_nb, .pic_right_nb, .pic_nb {
+		position: relative;
+		display: inline-block;
+		zoom: 1;
+		float: right;
+		clear: both;
+		border: 1px outset;
+		margin: .5em 0 .5em 1em;
+		padding: 0;
+		}
+.pic_left, .pic_left_nb {
+    float: left;
+		margin: .5em 1em .5em 0;
+		}
+.pic, .pic_nb {
+    float: none;
+	margin: .5em 1em;
+	}
+.pic_left_nb, .pic_right_nb, .pic_nb {border: none;}
+
+/* Generic float clear */	
+.end_wedge {clear: both;}
+/* Generic horizontal line */
+.line {
+    clear: both;
+    height: 2px;
+    background-color: #CCCCCC;
+    margin: .2em 5%;
+    padding: 0;
+    }
+
+/*** format for Legend - Members, Profile, Instructor pages ***/
+.legend div {
+  position: relative;
+  display: inline-block;
+  top: .7em;
+  left: .7em;
+  float: left;
+  background-color: #f8f8f8;
+  border: 1px solid black;
+  margin: .7em .7em 0 0;
+/* float margins do not collapse */  padding: 0;
+}
+.legend div {
+  width: 30em;
+  padding: 0 .2em 1em .2em;
+}
+.legend th {
+  vertical-align: middle;
+  width: 6em;
+}
+.legend td {
+  vertical-align: middle;
+  width: 21em;
+}
+.legend h4, .legend p {
+  text-align: center;
+}
+
+/****** TYPOGRAPHY ******/ 
+body {
+   color: #000000;
+   font-family: arial, sans-serif;
+	 font-size: 14px;  /* MyYahoo uses 13px, normal is 16px */
+	 }
+
+p, table {font-size:  100%;}
+h1 {font-size: 200%;}
+h2 {font-size: 175%;}
+h3 {font-size: 150%;}
+h4 {font-size: 125%;}
+h5 {font-size: 100%;}
+h6 {font-size: 75%;} /*
+h1, h2, h3 {font-weight: bold;} /* */
+
+/* Set vertical margins to prevent compression inside "hasLayout" blocks in IE */
+h1, h2, h3, h4, h5, h6 {margin: .5em 1em;}
+   /* L-R margin here to allow containers to have 0 padding and set width 100% */
+	 /* IE includes padding in width, Moz adds padding to set width */
+p, img {margin: .7em 0;}
+
+/* >>>COLORS NEED WORK<<<< */
+em {font-style: normal; color: #f81111;}
+
+.current { } /* default - NOT USED SO FAR... */
+.expired {font-weight: bold; color: #f81111;}
+.warning {font-weight: bold; color: #BB11BB;  #2244bb;} /* #eeaa00 #f0d000 4466dd */
+
+.login_fail {color: #FF6699;} /* dark red */
+
+
+/* aircraft 
+
+.N8261H {color: red;}
+.N4384F {color: green;}
+.N98819 {color: darkblue;}
+.N7362Y {color: #CC0000;}
+.N4334X {color: brown;}
+/**/
+
+/* status */
+.active {color: red;}
+.annual {color: orange;}
+.watch {color: orange;}
+.ignore {color: orange;}
+.ntf {color: green;}
+.repaired {color: green;}
+
+/* severity */
+.general  {color: purple;}
+.incidental {color: orange;}
+.caution  {color: orange;}
+.no_ifr   {color: red;}
+.grounded {color: red;}
+
+
+
+
+
+
+
+
+
