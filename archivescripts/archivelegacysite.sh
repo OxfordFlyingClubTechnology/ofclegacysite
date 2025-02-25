@@ -10,7 +10,7 @@
 rm -rf www.oxfordflyingclub.com
 wget --save-cookies cookies.txt \
      --keep-session-cookies \
-     --post-data 'ofcmember=Tedesco&ofcpassword=-h7gfCEVnwMw' \
+     --post-data 'ofcmember=PUTUSERHERE&ofcpassword=PUTPASSWORDHERE' \
      --delete-after \
      https://www.oxfordflyingclub.com/login.cgi
 
